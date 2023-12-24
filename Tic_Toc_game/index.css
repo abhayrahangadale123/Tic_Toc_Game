@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contant {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(125, 179, 227);
+
+}
+
+.fisrt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.winner {
+    margin-top: 2vh;
+    font-size: 10vh;
+    visibility: hidden;
+    color: red;
+
+}
+
+#start {
+    margin-top: 2vh;
+    padding: 8px 18px;
+    background-color: black;
+    color: #ffff;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.second {
+    width: 30vw;
+    height: 45vh;
+    background-color: blueviolet;
+    margin: 5vh 35vw;
+
+}
+
+.box {
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+    padding: 10vh;
+
+
+}
+
+#btn {
+    border: none;
+    border-radius: 10px;
+    height: 8vh;
+    width: 7vw;
+    padding: 8px 18px;
+    font-size: 5vh;
+    cursor: pointer;
+    background-color: #ffff;
+    color: black;
+
+}
+
+#Restart {
+    margin-top: 2vh;
+    padding: 8px 18px;
+    margin: 5vh 25vh;
+    background-color: black;
+    color: #ffff;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+@media(max-width:500px) {
+
+    .second {
+        width: 75vw;
+        height: 55vh;
+        background-color: blueviolet;
+        margin: 5vh 15vw;
+    }
+
+    .winner {
+        font-size: 5vh;
+    }
+
+    #btn {
+        height: 10vh;
+        width: 10vh;
+        margin: 5px;
+
+    }
+
+    #Restart {
+        margin: 3vh 20vh;
+    }
+
+}
